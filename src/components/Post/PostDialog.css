@@ -1,0 +1,99 @@
+.PostDialog-container {
+  text-align: center;
+}
+
+.PostDialog-username {
+  text-decoration: none;
+  text-align: center;
+  color: #2d767f;
+}
+
+.icon-buttons-comment {
+  background: #fff;
+  border: none;
+  color: black;
+}
+
+.icon-buttons-comment:hover,
+.icon-buttons-comment:active {
+  background: #ebedf0;
+}
+
+hr {
+  border: none;
+}
+
+.last-hr {
+  border: 1px solid #e0e0e0;
+}
+
+.comment-container {
+  display: grid;
+  grid-template-columns: 0.25fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "picture commenter";
+}
+
+.poster-pic-container {
+  grid-area: picture;
+}
+
+.commenter-info {
+  grid-area: commenter;
+  display: flex;
+  flex-direction: column;
+}
+
+.commenter-info p {
+  padding: 8px 0px;
+}
+
+.dialog-pic {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.commenter-pic-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.commenter-image {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.original-post-time {
+  text-align: center;
+  font-size: 10px;
+}
+
+.post-time {
+  font-size: 10px;
+  text-align: left;
+  margin-top: auto;
+}
+
+.comment-body {
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .commenter-image {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+  }
+
+  .dialog-pic {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+  }
+}

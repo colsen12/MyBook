@@ -1,0 +1,81 @@
+.post-container {
+  border: 0.5px solid #dcdfe0;
+  border-radius: 5px;
+  text-align: left;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 0.25fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "image post";
+  margin-bottom: 25px;
+  box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.user-image {
+  grid-area: image;
+  object-fit: cover;
+  display: block;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.user-image img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+}
+
+.post {
+  grid-area: post;
+}
+
+.time {
+  margin: 0;
+  font-size: 13px;
+}
+
+.post-body {
+  font-size: 20px;
+  margin-left: 8px;
+}
+
+.user-link {
+  font-size: 30px;
+  color: #2d767f;
+  list-style: none;
+}
+
+.userName {
+  text-decoration: none;
+  color: #2d767f;
+}
+
+.createdAt-comment-span {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.username-delete-button {
+  display: flex;
+  justify-content: space-between;
+}
+
+.post-like-count {
+  padding-right: 20px;
+}
+
+@media (min-width: 768px) {
+  .user-image img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+  }
+}

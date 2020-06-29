@@ -1,0 +1,135 @@
+/*post grid styles*/
+.individual-post {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  max-width: 900px;
+  min-width: 500px;
+  height: auto;
+}
+
+.home-post {
+  display: grid;
+  grid-auto-rows: auto;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+.profile {
+  padding: 100px 0px 25px 0px;
+  max-width: 700px;
+  min-width: 400px;
+}
+
+/*profile styles*/
+
+.profile-container {
+  background-color: #fff;
+  box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.75);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 0.5px solid #dcdfe0;
+  border-radius: 5px;
+}
+
+.profile-container img {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 7px 0px 7px 0px;
+}
+
+.edit-icon:hover {
+  cursor: pointer;
+}
+
+.edit-picture,
+.edit-profile {
+  background: #fff;
+  border: none;
+  color: blue;
+  font-size: 10px;
+}
+
+.edit-picture:hover,
+.edit-picture:active,
+.edit-profile:hover,
+.edit-profile:active {
+  cursor: pointer;
+  background: #ebedf0;
+}
+
+.profile-container p {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.profile-handle {
+  text-decoration: none;
+  color: #2d767f;
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+
+.unlogged-user-profile {
+  text-align: center;
+  background-color: #fff;
+  border: 0.5px solid #dcdfe0;
+  border-radius: 5px;
+  box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.unlogged-user-profile button {
+  display: inline-block;
+  min-width: 100px;
+  height: 30px;
+  margin: 0px 10px 10px 0px;
+}
+
+.profile-buttons {
+  text-decoration: none;
+  color: #fff;
+}
+
+.logout-button {
+  height: 40px;
+  width: 100px;
+  margin: 20px 0px 20px 0px;
+}
+
+.edit-profile-container {
+  margin-left: auto;
+}
+
+@media (min-width: 768px) {
+  .home-post {
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: 1fr 0.5fr;
+    grid-template-areas: "Post Profile";
+    grid-gap: 30px;
+    grid-row-gap: 30px;
+    margin: 30px 15px 0px 15px;
+    padding-top: 50px;
+  }
+
+  .individual-post {
+    grid-area: Post;
+    min-width: 100%;
+  }
+
+  .profile {
+    grid-area: Profile;
+    padding: 0px 0px 25px 0px;
+    min-width: 100%;
+  }
+
+  .profile-container img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 7px 0px 7px 0px;
+  }
+}
